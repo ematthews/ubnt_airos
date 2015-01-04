@@ -35,8 +35,8 @@ Values presently captured:
 
 collectd config file
 --------------------
-- Check out this repo somewhere.
-- Copy the config into /etc/collectd.d/python.conf (or appropriate)
+- Check out this repo somewhere, this example assumes /opt/ubnt_airos.
+- Copy the config into /etc/collectd.d/ubnt.conf (or appropriate)
 - Update the ModulePath value below.
 
 ```
@@ -45,7 +45,7 @@ collectd config file
 </LoadPlugin>
 
 <Plugin python>
-    ModulePath "/home/monitor/ubnt_airos"
+    ModulePath "/opt/ubnt_airos"
     LogTraces true
     Interactive true
     Import "ubnt_collectd"
